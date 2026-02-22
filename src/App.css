@@ -1,0 +1,12 @@
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(10,50px);
+  grid-template-rows: repeat(10,50px);
+  justify-content: center;
+}
+
+.grid-color{
+  border: 2px solid gray;
+  background-color: rgb(48, 44, 44);
+}
