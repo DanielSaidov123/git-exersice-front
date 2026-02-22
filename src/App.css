@@ -10,3 +10,11 @@
   border: 2px solid gray;
   background-color: rgb(48, 44, 44);
 }
+
+.click{
+   background: tomato;
+}
+
+.find{
+  background: red;
+}

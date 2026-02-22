@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Gridlayout = ({id ,click}) => {
+export const Gridlayout = ({id ,click,isClicked,isgrid}) => {
     return (
-    <div className='grid-color' id={id} onClick={()=>click(id)}></div>
+    <div className={`grid-color ${isClicked ? "click" : ""} ${isgrid ? "find" : ""}`}   id={id} onClick={()=>click(id)}></div>
   )
 }
