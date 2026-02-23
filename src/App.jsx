@@ -11,7 +11,7 @@ function App() {
       setFound(true);
     }
     else{
-    setClickedCells(prev =>[...prev ,id])
+    setClickedCells(prev =>!prev.includes(id)?[...prev ,id]:prev)
     }
     console.log(clickedCells);
     console.log(id);
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <h1>find the Secret Color!</h1>
+      <h1 className="h1">find the Secret Color! <div> </div></h1>
       <div className="grid">
         {[...Array(100)].map((_, i) => (
           <Gridlayout key={i} id={i} click={handleClick} isClicked={clickedCells.includes(i)} isgrid={found?secret === i:_} num={secret} />

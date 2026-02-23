@@ -5,16 +5,32 @@
   grid-template-rows: repeat(10,50px);
   justify-content: center;
 }
-
+.grid-color:hover {
+  transform: scale(1.10);
+  transition: transform 0.3s ease;
+}
 .grid-color{
   border: 2px solid gray;
   background-color: rgb(48, 44, 44);
+  transition: transform 0.3s ease;
 }
 
 .click{
-   background: tomato;
+   background: rgb(194, 81, 61);
 }
 
 .find{
-  background: red;
+  background:  rgb(243, 0, 203);
+}
+
+.h1{
+  display: flex;
+  justify-content: center;
+
+}
+
+.h1 div{
+  background-color: rgb(243, 0, 203);
+  width: 50px;
+  height: 50px;
 }
